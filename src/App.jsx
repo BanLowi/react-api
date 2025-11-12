@@ -37,10 +37,19 @@ function App() {
         <div className="container">
           <div>
             <h2>ACTORS</h2>
-            <ul className="list-group list-group-numbered">
+            <ul className="list-group list-group-flush">
               {
                 actors.map(actor => (
-                  <li key={actor.id} className="list-group-item">{actor.name}</li>
+                  <li key={actor.id} className="list-group-item">
+                    <div className="card col-3">
+                      <img src={actor.image} className="card-img-top" alt={actor.name} />
+                      <div className="card-body">
+
+                        {actor.name}
+                      </div>
+
+                    </div>
+                  </li>
                 ))
               }
             </ul>
