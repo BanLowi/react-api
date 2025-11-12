@@ -1,1 +1,5 @@
 @import url("bootstrap");
+
+.fit_cover {
+    object-fit: cover;
+}
